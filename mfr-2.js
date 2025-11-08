@@ -5,9 +5,9 @@ const unique = function(alreadySeen, currentSeen) {
     }
   }
 
-  // currentSeen.fliter( element => !alreadySeen.includes(element) );
+  // currentSeen.fliter(  element => !alreadySeen.includes(element) );
     
   return alreadySeen;
 }
 
-console.log("2 ->",[["Orion", "Leo"], ["Taurus"], ["Orion", "Gemini"]].reduce(unique));
+console.log("2 ->",[["Orion", "Leo"], ["Taurus"], ["Orion", "Gemini"]].reduce(unique, ["Orion", "Leo"]));

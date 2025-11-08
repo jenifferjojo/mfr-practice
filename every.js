@@ -2,4 +2,16 @@ const isBelow32 = function (temperature) {
   return temperature < 32;
 };
 
-console.log("7 ->",[[22, 23], [25, 24, 22], [29]].flatMap(x => x).every(isBelow32));
+const isBelow120 = function (unitsConsumed) {
+  return unitsConsumed < 120;
+};
+
+const isPositive = function (rainfallData) {
+  return rainfallData > 0;
+};
+
+console.log("7 ->", [[22, 23], [25, 24, 22], [29]].flat().every(isBelow32));
+
+console.log("29 ->", [[3, 4], [5, 2], [1]].flat().every(isPositive));
+
+console.log("33 ->", [[110, 115], [118], [109]].flat().every(isBelow120));

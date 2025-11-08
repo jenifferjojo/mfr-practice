@@ -27,3 +27,25 @@ console.log("22 ->",[["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]].
 console.log("23 ->",["A", "B", "A", "C", "B"].reduce(unique, []));
 
 console.log("25 ->",[["rose", "lily"], ["lily", "tulip"]].flat().reduce(unique, []));
+
+console.log("27 ->",[["A", "B"], ["B", "C"], ["A"]].flat().reduce(unique, []));
+
+console.log("31 ->",[["idli", "vada"], ["vada", "upma"]].flat().reduce(unique, []));
+
+console.log("32 ->",[["sunset", "bird"], ["river"], ["sunset"]].flat().reduce(unique, []));
+
+console.log("36 ->",[["cheese", "bread"], ["tomato"], ["bread"]].flat().reduce(unique, []));
+
+console.log("37 ->",[["sky", "blue"], ["night"], ["sky", "dark"]].flat().reduce(unique, []));
+
+console.log("38 ->",[["toy", "sticker"], ["candy", "sticker"]].flat().reduce(unique, []));
+
+console.log("42 ->",[["Tom", "Jerry"], ["Jerry", "Spike"]].flat().reduce(unique, []));
+
+console.log("43 ->",[["Vega", "Sirius"], ["Vega", "Rigel"]].flat().reduce(unique, []));
+
+console.log("46 ->",[["mint", "ginger"], ["lemon"], ["mint"]].flat().reduce(unique, []));
+
+console.log("48 ->",[["pencil", "charcoal"], ["ink"], ["pencil"]].flat().reduce(unique, []));
+
+console.log("50 ->",[["salt", "pepper"], ["turmeric"], ["salt"]].flat().reduce(unique, []));
