@@ -55,3 +55,5 @@ console.log("55 ->",[["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]].
 console.log("57 ->",["sparrow", "crow", "sparrow", "eagle", "crow"].reduce(unique, []));
 
 console.log("60 ->",[["chocolate", "vanilla"], ["strawberry", "vanilla"], ["chocolate"]].flat().reduce(unique, []));
+
+console.log("63 ->",[["salt", "egg"], ["water", "salt"], ["egg"]].flat().reduce(unique, []));
