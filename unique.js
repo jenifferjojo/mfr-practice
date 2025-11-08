@@ -49,3 +49,5 @@ console.log("46 ->",[["mint", "ginger"], ["lemon"], ["mint"]].flat().reduce(uniq
 console.log("48 ->",[["pencil", "charcoal"], ["ink"], ["pencil"]].flat().reduce(unique, []));
 
 console.log("50 ->",[["salt", "pepper"], ["turmeric"], ["salt"]].flat().reduce(unique, []));
+
+console.log("55 ->",[["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]].flat().reduce(unique, []));
