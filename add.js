@@ -35,3 +35,5 @@ console.log("49 ->",[[1, 1, 2], [2, 1]].flat().reduce(add));
 console.log("52 ->",[["hi", "nice", "to", "meet", "you"], ["how", "are", "you"], ["good", "bye"]].flat().reduce(add));
 
 console.log("56 ->",[[3, 5], [2, 1], [1, 1, 2], [2, 1]].flat().reduce(add));
+
+console.log("59 ->",[[3, 5], [2, 1], [2, 1]].flat().reduce(add));
