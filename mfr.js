@@ -22,6 +22,10 @@ const anySangDo = function (notes) {
   return notes.includes("do");
 };
 
+const anyDidTurn = function (steps) {
+  return steps.includes("turn");
+};
+
 const isBelow32 = function (temperature) {
   return temperature < 32;
 };
@@ -47,3 +51,14 @@ console.log("9 ->",[["blue", "yellow"], ["yellow", "green"], ["blue"]].flatMap(x
 console.log("10 ->",["Dune", "Dune", "Foundation", "Dune"].reduce(countDune, 0));
 
 console.log("11 ->",[["rice", "lentils"], ["rice"], ["curd", "lentils"]].flatMap(x => x).reduce(unique, []));
+
+console.log("13 ->",[[4, 6], [2, 3, 1], [5]].flatMap(x => x).reduce(add));
+
+console.log("14 ->",["small", "large", "medium", "small"].reduce(unique, []));
+
+console.log("16 ->",[[1, 2], [3], [2, 4, 1]].flatMap(x => x).reduce(unique, []));
+
+console.log("16 ->",[["step", "tap"], ["turn", "step"]].some(anyDidTurn));
+
+
+
