@@ -6,6 +6,18 @@ const countDune = function (count, book) {
   return book === "Dune" ? count + 1 : count;
 };
 
-console.log("1 ->",["red", "blue", "red", "green", "red", "blue"].reduce(countBlues, 0));
+const countDeer = function (count, book) {
+  return book === "deer" ? count + 1 : count;
+};
 
-console.log("10 ->",["Dune", "Dune", "Foundation", "Dune"].reduce(countDune, 0));
+const countChocolate = function (count, book) {
+  return book === "chocolate" ? count + 1 : count;
+};
+
+console.log("1 ->", ["red", "blue", "red", "green", "red", "blue"].reduce(countBlues, 0));
+
+console.log("10 ->", ["Dune", "Dune", "Foundation", "Dune"].reduce(countDune, 0));
+
+console.log("15 ->", ["deer", "deer", "rabbit", "deer"].reduce(countDeer, 0));
+
+console.log("24 ->", [["vanilla", "chocolate"], ["strawberry"], ["chocolate"]].flat().reduce(countChocolate, 0));
