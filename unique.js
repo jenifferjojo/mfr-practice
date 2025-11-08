@@ -59,3 +59,5 @@ console.log("60 ->",[["chocolate", "vanilla"], ["strawberry", "vanilla"], ["choc
 console.log("63 ->",[["salt", "egg"], ["water", "salt"], ["egg"]].flat().reduce(unique, []));
 
 console.log("68 ->",[["olives", "cheese"], ["cheese", "pepperoni"], ["olives"]].flat().reduce(unique, []));
+
+console.log("70 ->",[["red", "green"], ["green", "blue"], ["yellow", "red"]].flat().reduce(unique, []));
