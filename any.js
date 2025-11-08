@@ -22,6 +22,10 @@ const isEquals4 = function (value) {
   return value === 4;
 };
 
+const isEquals100 = function (value) {
+  return value === 100;
+};
+
 const anyWroteExcellent = function (value) {
   return value.includes("excellent");
 };
@@ -44,4 +48,6 @@ console.log("53 ->",[["excellent", "to", "meet", "you"], ["how", "are", "you"]].
 
 console.log("61 ->",[[82, 67, 91], [91, 78], [84, 52]].flat().some(isOver90));
 
-console.log("12 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangFa));
+console.log("66 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangFa));
+
+console.log("71 ->",[[92, 94, 93], [99, 94, 103], [102, 100]].flat().some(isEquals100));
