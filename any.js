@@ -18,6 +18,10 @@ const anyEquals4 = function (value) {
   return value === 4;
 };
 
+const anyWroteExcellent = function (value) {
+  return value.includes("excellent");
+};
+
 console.log("6 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangDo));
 
 console.log("12 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangSo));
@@ -27,3 +31,5 @@ console.log("17 ->",[["step", "tap"], ["turn", "step"]].some(anyDidTurn));
 console.log("40 ->",[[5, 6], [7], [6]].flat().some(anyOver7));
 
 console.log("47 ->",[[2, 3], [1], [4, 2]].flat().some(anyEquals4));
+
+console.log("47 ->",[["excellent", "to", "meet", "you"], ["how", "are", "you"]].some(anyWroteExcellent));
