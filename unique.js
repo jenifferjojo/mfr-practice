@@ -57,3 +57,5 @@ console.log("57 ->",["sparrow", "crow", "sparrow", "eagle", "crow"].reduce(uniqu
 console.log("60 ->",[["chocolate", "vanilla"], ["strawberry", "vanilla"], ["chocolate"]].flat().reduce(unique, []));
 
 console.log("63 ->",[["salt", "egg"], ["water", "salt"], ["egg"]].flat().reduce(unique, []));
+
+console.log("68 ->",[["olives", "cheese"], ["cheese", "pepperoni"], ["olives"]].flat().reduce(unique, []));
