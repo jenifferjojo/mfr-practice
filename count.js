@@ -22,6 +22,10 @@ const countBanana = function (count, book) {
   return book === "banana" ? count + 1 : count;
 };
 
+const countRed = function (count, book) {
+  return book === "red" ? count + 1 : count;
+};
+
 console.log("1 ->", ["red", "blue", "red", "green", "red", "blue"].reduce(countBlues, 0));
 
 console.log("10 ->", ["Dune", "Dune", "Foundation", "Dune"].reduce(countDune, 0));
@@ -33,3 +37,5 @@ console.log("24 ->", [["vanilla", "chocolate"], ["strawberry"], ["chocolate"]].f
 console.log("35 ->", ["track1", "track2", "track1"].reduce(countTrack, 0));
 
 console.log("51 ->", ["grapes", "banana", "apple", "banana"].reduce(countBanana, 0));
+
+console.log("58 ->", [["red", "blue",], ["blue", "yellow"], ["red", "red"]].flat().reduce(countRed, 0));
