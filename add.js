@@ -107,6 +107,11 @@ const combineSyllablesUsed = function() {
   return data.flatMap(x => x).reduce(add);
 };
 
+const combinePoemFragments = function() {
+  const data = [["live", "happy"], ["live", "long"], ["without", "regrets"]];
+  return data.flatMap(x => x).reduce(add);
+};
+
 const main = function() {
   console.log("5 => ", totalCandiesRefilled());
   console.log("8 => ", totalMiles());
@@ -129,6 +134,7 @@ const main = function() {
   console.log("67 => ", totalParcelWeights());
   console.log("74 => ", totalHoursPracticed());
   console.log("77 => ", combineSyllablesUsed());
+  console.log("83 => ", combinePoemFragments());
 }
 
 main();
