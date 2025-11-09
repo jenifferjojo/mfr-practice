@@ -118,8 +118,8 @@ const spicesUsed = function() {
   return data.flatMap(x => x).reduce(unique, []);
 }
 
-const moviesMentioned = function() {
-  const data = [["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]];
+const movieGenresMentioned = function() {
+  const data = [["comedy", "mystery"], ["thriller"], ["mystery"]];
   return data.flatMap(x => x).reduce(unique, []);
 }
 
@@ -158,6 +158,11 @@ const distinctPlantsSeen = function() {
   return data.flatMap(x => x).reduce(unique, []);
 }
 
+const cartoonsFavored = function() {
+  const data = [["Tom & Jerry", "Pokemon"], ["Tom & Jerry"], ["Thomas The Train", "Pokemon"]];
+  return data.flatMap(x => x).reduce(unique, []);
+}
+
 const main = function() {
   console.log("2 => ", spottedConstellations());
   console.log("3 => ", spottedBirds());
@@ -181,7 +186,7 @@ const main = function() {
   console.log("46 => ", uniqueFlavors());
   console.log("48 => ", toolsUsed());
   console.log("50 => ", spicesUsed());
-  console.log("55 => ", moviesMentioned());
+  console.log("55 => ", movieGenresMentioned());
   console.log("57 => ", birdsSpotted());
   console.log("60 => ", flavoursAvailable());
   console.log("63 => ", recipeIngredients());
@@ -189,6 +194,7 @@ const main = function() {
   console.log("70 => ", colorsSwatched());
   console.log("73 => ", destinationsChoosen());
   console.log("75 => ", distinctPlantsSeen());
+  console.log("84 => ", cartoonsFavored());
 }
 
 main();
