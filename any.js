@@ -34,6 +34,10 @@ const isOver90 = function (mark) {
   return mark > 90;
 };
 
+const isEquals0 = function (value) {
+  return value === 0;
+};
+
 const anySangDo = function() {
   const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
   return data.flatMap(x => x).some(isNoteDo);
@@ -79,6 +83,11 @@ const anyEquals100 = function() {
   return data.flatMap(x => x).some(isEquals100);
 }
 
+const anyEquals0 = function() {
+  const data = [[92, 94, 93], [99, 94, 103], [102, 100]];
+  return data.flatMap(x => x).some(isEquals0);
+}
+
 const main = function() {
   console.log("6 => ", anySangDo());
   console.log("12 => ", anySangSo());
@@ -89,6 +98,7 @@ const main = function() {
   console.log("61 => ", anyOver90());
   console.log("66 => ", anySangFa());
   console.log("71 => ", anyEquals100());
+  console.log("78 => ", anyEquals0());
 }
 
 main();
