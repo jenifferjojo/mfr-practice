@@ -1,17 +1,17 @@
-const isNoteDo = function (notes) {
-  return notes.includes("do");
+const isNoteDo = function (note) {
+  return note === "do";
 };
 
-const isStepTurn = function (steps) {
-  return steps.includes("turn");
+const isStepTurn = function (step) {
+  return step === "turn";
 };
 
-const isNoteSo = function (notes) {
-  return notes.includes("so");
+const isNoteSo = function (note) {
+  return note === "so";
 };
 
-const isNoteFa = function (notes) {
-  return notes.includes("fa");
+const isNoteFa = function (note) {
+  return note === "fa";
 };
 
 const isOver7 = function (measure) {
@@ -27,7 +27,7 @@ const isEquals100 = function (value) {
 };
 
 const isWordExcellent = function (value) {
-  return value.includes("excellent");
+  return value === "excellent";
 };
 
 const isOver90 = function (mark) {
