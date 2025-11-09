@@ -10,7 +10,7 @@ const unique = function (alreadySeen, currentSeen) {
 
 const spottedConstellations = function() {
   const data = [["Orion", "Leo"], ["Taurus"], ["Orion", "Gemini"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const spottedBirds = function() {
@@ -20,17 +20,17 @@ const spottedBirds = function() {
 
 const studentsPresent = function() {
   const data = [["Asha", "Ravi", "Neel"], ["Ravi"], ["Asha", "Meera"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const colorsUsed = function() {
   const data = [["blue", "yellow"], ["yellow", "green"], ["blue"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const ingredientsUsed = function() {
   const data = [["rice", "lentils"], ["rice"], ["curd", "lentils"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const sizesUsed = function() {
@@ -40,17 +40,17 @@ const sizesUsed = function() {
 
 const chaptersCompleted = function() {
   const data = [[1, 2], [3], [2, 4, 1]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const fruitsUsed = function() {
   const data = [["apple", "banana"], ["apple"], ["apple", "orange"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const moviesWatched = function() {
   const data = [["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const attendees = function() {
@@ -60,67 +60,67 @@ const attendees = function() {
 
 const flowersUsed = function() {
   const data = [["rose", "lily"], ["lily", "tulip"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const stationsAnnounced = function() {
   const data = [["A", "B"], ["B", "C"], ["A"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const snacksServed = function() {
   const data = [["idli", "vada"], ["vada", "upma"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const themes = function() {
   const data = [["sunset", "bird"], ["river"], ["sunset"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const ingredientsNeeded = function() {
   const data = [["cheese", "bread"], ["tomato"], ["bread"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const wordsUsed = function() {
   const data = [["sky", "blue"], ["night"], ["sky", "dark"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const giftItemsUsed = function() {
   const data = [["toy", "sticker"], ["candy", "sticker"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const participants = function() {
   const data = [["Tom", "Jerry"], ["Jerry", "Spike"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const starsSeen = function() {
   const data = [["Vega", "Sirius"], ["Vega", "Rigel"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const uniqueFlavors = function() {
   const data = [["mint", "ginger"], ["lemon"], ["mint"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const toolsUsed = function() {
   const data = [["pencil", "charcoal"], ["ink"], ["pencil"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const spicesUsed = function() {
   const data = [["salt", "pepper"], ["turmeric"], ["salt"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const moviesMentioned = function() {
   const data = [["Inception", "Dunkirk"], ["Interstellar"], ["Inception"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const birdsSpotted = function() {
@@ -130,22 +130,22 @@ const birdsSpotted = function() {
 
 const flavoursAvailable = function() {
   const data = [["chocolate", "vanilla"], ["strawberry", "vanilla"], ["chocolate"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const recipeIngredients = function() {
   const data = [["salt", "egg"], ["water", "salt"], ["egg"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const toppingsChoosed = function() {
   const data = [["olives", "cheese"], ["cheese", "pepperoni"], ["olives"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const colorsSwatched = function() {
   const data = [["red", "green"], ["green", "blue"], ["yellow", "red"]];
-  return data.flat().reduce(unique, []);
+  return data.flatMap(x => x).reduce(unique, []);
 }
 
 const main = function() {

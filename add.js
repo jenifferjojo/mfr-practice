@@ -4,97 +4,97 @@ const add = function (sum, value) {
 
 const totalCandiesRefilled = function() {
   const data = [[5, 3], [2], [4, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalMiles = function() {
   const data = [[2, 3, 2], [4], [1, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalCrateWeights = function() {
   const data = [[4, 6], [2, 3, 1], [5]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalLiters = function() {
   const data = [[1, 2, 1], [3], [2]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalCranes = function() {
   const data = [[3, 2], [1], [4]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalPens = function() {
   const data = [[2, 3], [1], [3, 2]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalRepetitions = function() {
   const data = [[10, 20], [5], [15, 10]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalPages = function() {
   const data = [[12, 10], [5], [8, 7]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalStandWeights = function() {
   const data = [[4, 3], [2], [3, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalLaps = function() {
   const data = [[2, 3, 2], [1], [4]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalRoutines = function() {
   const data = [[6, 4], [3, 2]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalCandies = function() {
   const data = [[1, 2, 3], [2]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalPassengers = function() {
   const data = [[10, 12], [15]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalGroceryQuantity = function() {
   const data = [[3, 5], [2, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalCoinsCollected = function() {
   const data = [[1, 1, 2], [2, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const combineWords = function() {
   const data = [["hi", "nice", "to", "meet", "you"], ["how", "are", "you"], ["good", "bye"]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalPushups = function() {
   const data = [[3, 5], [2, 1], [1, 1, 2], [2, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const distanceCycleCovered = function() {
   const data = [[3, 5], [2, 1], [2, 1]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const totalParcelWeights = function() {
   const data = [[3, 5], [2, 9], [4, 4]];
-  return data.flat().reduce(add);
+  return data.flatMap(x => x).reduce(add);
 }
 
 const main = function() {

@@ -43,7 +43,7 @@ const countDeers = function () {
 
 const countChocolates = function () {
   const data = [["vanilla", "chocolate"], ["strawberry"], ["chocolate"]];
-  return data.flat().reduce(countChocolate, 0);
+  return data.flatMap(x => x).reduce(countChocolate, 0);
 }
 
 const countTracke1s = function () {
@@ -58,7 +58,7 @@ const countBananas = function () {
 
 const countReds = function () {
   const data = [["red", "blue",], ["blue", "yellow"], ["red", "red"]];
-  return data.flat().reduce(countRed, 0);
+  return data.flatMap(x => x).reduce(countRed, 0);
 }
 
 const main = function() {

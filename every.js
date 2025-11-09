@@ -24,32 +24,32 @@ const isOver0 = function (taskDone) {
 
 const allTemperatureBelow32 = function() {
   const data = [[22, 23], [25, 24, 22], [29]];
-  return data.flat().every(isBelow32);
+  return data.flatMap(x => x).every(isBelow32);
 }
 
 const allPositive = function() {
   const data = [[3, 4], [5, 2], [1]];
-  return data.flat().every(isAbove0);
+  return data.flatMap(x => x).every(isAbove0);
 }
 
 const allUnitConsumedBelow120 = function() {
   const data = [[110, 115], [118], [109]];
-  return data.flat().every(isBelow120);
+  return data.flatMap(x => x).every(isBelow120);
 }
 
 const allRainfallDataBelow50 = function() {
   const data = [[30, 43], [15, 24], [15]];
-  return data.flat().every(isBelow50);
+  return data.flatMap(x => x).every(isBelow50);
 }
 
 const allAbove18 = function() {
   const data = [[30, 43], [37, 24], [19]];
-  return data.flat().every(isAbove18);
+  return data.flatMap(x => x).every(isAbove18);
 }
 
 const allOver0 = function() {
   const data = [[3, 2], [6, 1], [6, 4, 8]];
-  return data.flat().every(isOver0);
+  return data.flatMap(x => x).every(isOver0);
 }
 
 const main = function() {

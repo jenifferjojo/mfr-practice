@@ -36,47 +36,47 @@ const isOver90 = function (mark) {
 
 const anySangDo = function() {
   const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
-  return data.flat().some(isNoteDo);
+  return data.flatMap(x => x).some(isNoteDo);
 }
 
 const anySangSo = function() {
   const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
-  return data.flat().some(isNoteSo);
+  return data.flatMap(x => x).some(isNoteSo);
 }
 
 const anyDidTurn = function() {
   const data = [["step", "tap"], ["turn", "step"]];
-  return data.flat().some(isStepTurn);
+  return data.flatMap(x => x).some(isStepTurn);
 }
 
 const anyOver7 = function() {
   const data = [[5, 6], [7], [6]];
-  return data.flat().some(isOver7);
+  return data.flatMap(x => x).some(isOver7);
 }
 
 const anyEquals4 = function() {
   const data = [[2, 3], [1], [4, 2]];
-  return data.flat().some(isEquals4);
+  return data.flatMap(x => x).some(isEquals4);
 }
 
 const anyWroteExcellent = function() {
   const data = [["excellent", "to", "meet", "you"], ["how", "are", "you"]];
-  return data.flat().some(isWordExcellent);
+  return data.flatMap(x => x).some(isWordExcellent);
 }
 
 const anyOver90 = function() {
   const data = [[82, 67, 91], [91, 78], [84, 52]];
-  return data.flat().some(isOver90);
+  return data.flatMap(x => x).some(isOver90);
 }
 
 const anySangFa = function() {
   const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
-  return data.flat().some(isNoteFa);
+  return data.flatMap(x => x).some(isNoteFa);
 }
 
 const anyEquals100 = function() {
   const data = [[92, 94, 93], [99, 94, 103], [102, 100]];
-  return data.flat().some(isEquals100);
+  return data.flatMap(x => x).some(isEquals100);
 }
 
 const main = function() {
