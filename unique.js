@@ -153,6 +153,11 @@ const destinationsChoosen = function() {
   return data.flatMap(x => x).reduce(unique, []);
 }
 
+const distinctPlantsSeen = function() {
+  const data = [["Rosemary", "Agave"], ["Pine", "Jade"], ["Juniper", "Jade"]];
+  return data.flatMap(x => x).reduce(unique, []);
+}
+
 const main = function() {
   console.log("2 => ", spottedConstellations());
   console.log("3 => ", spottedBirds());
@@ -183,6 +188,7 @@ const main = function() {
   console.log("68 => ", toppingsChoosed());
   console.log("70 => ", colorsSwatched());
   console.log("73 => ", destinationsChoosen());
+  console.log("75 => ", distinctPlantsSeen());
 }
 
 main();
