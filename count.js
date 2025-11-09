@@ -26,6 +26,10 @@ const countRed = function (count, book) {
   return book === "red" ? count + 1 : count;
 };
 
+const countPhonetic = function (count, book) {
+  return book === "sa" ? count + 1 : count;
+};
+
 const countBlues = function () {
   const data = ["red", "blue", "red", "green", "red", "blue"];
   return data.reduce(countBlue, 0);
@@ -61,6 +65,11 @@ const countReds = function () {
   return data.flatMap(x => x).reduce(countRed, 0);
 }
 
+const countPhonetics = function () {
+  const data = [["sa", "ae",], ["th", "aa"], ["sa", "aa"]];
+  return data.flatMap(x => x).reduce(countPhonetic, 0);
+}
+
 const main = function() {
   console.log("1 => ", countBlues());
   console.log("10 => ", countDunes());
@@ -68,7 +77,7 @@ const main = function() {
   console.log("24 => ", countChocolates());
   console.log("35 => ", countTracke1s());
   console.log("51 => ", countBananas());
-  console.log("58 => ", countReds());
+  console.log("76 => ", countPhonetics());
 }
 
 main();
