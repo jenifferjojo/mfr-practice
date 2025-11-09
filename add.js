@@ -102,6 +102,11 @@ const totalHoursPracticed = function() {
   return data.flatMap(x => x).reduce(add);
 };
 
+const combineSyllablesUsed = function() {
+  const data = [["an", "in"], ["an", "la"], ["ma", "la"]];
+  return data.flatMap(x => x).reduce(add);
+};
+
 const main = function() {
   console.log("5 => ", totalCandiesRefilled());
   console.log("8 => ", totalMiles());
@@ -123,6 +128,7 @@ const main = function() {
   console.log("59 => ", distanceCycleCovered());
   console.log("67 => ", totalParcelWeights());
   console.log("74 => ", totalHoursPracticed());
+  console.log("77 => ", combineSyllablesUsed());
 }
 
 main();
