@@ -148,6 +148,11 @@ const colorsSwatched = function() {
   return data.flatMap(x => x).reduce(unique, []);
 }
 
+const destinationsChoosen = function() {
+  const data = [["Vietnam", "Laos"], ["Italy", "Greece"], ["Laos", "Italy"]];
+  return data.flatMap(x => x).reduce(unique, []);
+}
+
 const main = function() {
   console.log("2 => ", spottedConstellations());
   console.log("3 => ", spottedBirds());
@@ -177,6 +182,7 @@ const main = function() {
   console.log("63 => ", recipeIngredients());
   console.log("68 => ", toppingsChoosed());
   console.log("70 => ", colorsSwatched());
+  console.log("73 => ", destinationsChoosen());
 }
 
 main();
