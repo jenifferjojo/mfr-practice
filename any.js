@@ -1,16 +1,16 @@
-const anySangDo = function (notes) {
+const isNoteDo = function (notes) {
   return notes.includes("do");
 };
 
-const anyDidTurn = function (steps) {
+const isStepTurn = function (steps) {
   return steps.includes("turn");
 };
 
-const anySangSo = function (notes) {
+const isNoteSo = function (notes) {
   return notes.includes("so");
 };
 
-const anySangFa = function (notes) {
+const isNoteFa = function (notes) {
   return notes.includes("fa");
 };
 
@@ -26,7 +26,7 @@ const isEquals100 = function (value) {
   return value === 100;
 };
 
-const anyWroteExcellent = function (value) {
+const isWordExcellent = function (value) {
   return value.includes("excellent");
 };
 
@@ -34,20 +34,61 @@ const isOver90 = function (mark) {
   return mark > 90;
 };
 
-console.log("6 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangDo));
+const anySangDo = function() {
+  const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
+  return data.flat().some(isNoteDo);
+}
 
-console.log("12 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangSo));
+const anySangSo = function() {
+  const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
+  return data.flat().some(isNoteSo);
+}
 
-console.log("17 ->",[["step", "tap"], ["turn", "step"]].some(anyDidTurn));
+const anyDidTurn = function() {
+  const data = [["step", "tap"], ["turn", "step"]];
+  return data.flat().some(isStepTurn);
+}
 
-console.log("40 ->",[[5, 6], [7], [6]].flat().some(isOver7));
+const anyOver7 = function() {
+  const data = [[5, 6], [7], [6]];
+  return data.flat().some(isOver7);
+}
 
-console.log("47 ->",[[2, 3], [1], [4, 2]].flat().some(isEquals4));
+const anyEquals4 = function() {
+  const data = [[2, 3], [1], [4, 2]];
+  return data.flat().some(isEquals4);
+}
 
-console.log("53 ->",[["excellent", "to", "meet", "you"], ["how", "are", "you"]].some(anyWroteExcellent));
+const anyWroteExcellent = function() {
+  const data = [["excellent", "to", "meet", "you"], ["how", "are", "you"]];
+  return data.flat().some(isWordExcellent);
+}
 
-console.log("61 ->",[[82, 67, 91], [91, 78], [84, 52]].flat().some(isOver90));
+const anyOver90 = function() {
+  const data = [[82, 67, 91], [91, 78], [84, 52]];
+  return data.flat().some(isOver90);
+}
 
-console.log("66 ->",[["mi", "fa", "so"], ["do", "mi"], ["fa"]].some(anySangFa));
+const anySangFa = function() {
+  const data = [["mi", "fa", "so"], ["do", "mi"], ["fa"]];
+  return data.flat().some(isNoteFa);
+}
 
-console.log("71 ->",[[92, 94, 93], [99, 94, 103], [102, 100]].flat().some(isEquals100));
+const anyEquals100 = function() {
+  const data = [[92, 94, 93], [99, 94, 103], [102, 100]];
+  return data.flat().some(isEquals100);
+}
+
+const main = function() {
+  console.log("6 => ", anySangDo());
+  console.log("12 => ", anySangSo());
+  console.log("17 => ", anyDidTurn());
+  console.log("40 => ", anyOver7());
+  console.log("47 => ", anyEquals4());
+  console.log("53 => ", anyWroteExcellent());
+  console.log("61 => ", anyOver90());
+  console.log("66 => ", anySangFa());
+  console.log("71 => ", anyEquals100());
+}
+
+main();
