@@ -10,16 +10,16 @@ const isBelow50 = function (rainfallData) {
   return rainfallData < 50;
 };
 
-const isAbove0 = function (rainfallData) {
-  return rainfallData > 0;
+const isBelow10 = function (value) {
+  return value < 10;
+};
+
+const isAbove0 = function (value) {
+  return value > 0;
 };
 
 const isAbove18 = function (age) {
   return age > 18;
-};
-
-const isOver0 = function (taskDone) {
-  return taskDone > 0;
 };
 
 const allTemperatureBelow32 = function() {
@@ -42,14 +42,19 @@ const allRainfallDataBelow50 = function() {
   return data.flatMap(x => x).every(isBelow50);
 }
 
-const allAbove18 = function() {
+const allAboveAge18 = function() {
   const data = [[30, 43], [37, 24], [19]];
   return data.flatMap(x => x).every(isAbove18);
 }
 
-const allOver0 = function() {
+const allDoneAtleast1 = function() {
   const data = [[3, 2], [6, 1], [6, 4, 8]];
-  return data.flatMap(x => x).every(isOver0);
+  return data.flatMap(x => x).every(isAbove0);
+}
+
+const allItemsWeighBelow10 = function() {
+  const data = [[3, 2], [6, 1], [6, 4, 8]];
+  return data.flatMap(x => x).every(isBelow10);
 }
 
 const main = function() {
@@ -57,8 +62,9 @@ const main = function() {
   console.log("29 => ", allTemperatureBelow32());
   console.log("33 => ", allRainfallDataBelow50());
   console.log("54 => ", allPositive());
-  console.log("62 => ", allOver0());
-  console.log("72 => ", allAbove18());
+  console.log("62 => ", allDoneAtleast1());
+  console.log("72 => ", allAboveAge18());
+  console.log("79 => ", allItemsWeighBelow10());
 }
 
 main();
