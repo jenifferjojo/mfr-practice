@@ -1,4 +1,4 @@
-const countBlues = function (count, value) {
+const countBlue = function (count, value) {
   return value === "blue" ? count + 1 : count;
 };
 
@@ -14,7 +14,7 @@ const countChocolate = function (count, book) {
   return book === "chocolate" ? count + 1 : count;
 };
 
-const countTrack = function (count, book) {
+const countTrack1 = function (count, book) {
   return book === "track1" ? count + 1 : count;
 };
 
@@ -26,16 +26,49 @@ const countRed = function (count, book) {
   return book === "red" ? count + 1 : count;
 };
 
-console.log("1 ->", ["red", "blue", "red", "green", "red", "blue"].reduce(countBlues, 0));
+const countBlues = function () {
+  const data = ["red", "blue", "red", "green", "red", "blue"];
+  return data.reduce(countBlue, 0);
+}
 
-console.log("10 ->", ["Dune", "Dune", "Foundation", "Dune"].reduce(countDune, 0));
+const countDunes = function () {
+  const data = ["Dune", "Dune", "Foundation", "Dune"];
+  return data.reduce(countDune, 0);
+}
 
-console.log("15 ->", ["deer", "deer", "rabbit", "deer"].reduce(countDeer, 0));
+const countDeers = function () {
+  const data = ["deer", "deer", "rabbit", "deer"];
+  return data.reduce(countDeer, 0);
+}
 
-console.log("24 ->", [["vanilla", "chocolate"], ["strawberry"], ["chocolate"]].flat().reduce(countChocolate, 0));
+const countChocolates = function () {
+  const data = [["vanilla", "chocolate"], ["strawberry"], ["chocolate"]];
+  return data.flat().reduce(countChocolate, 0);
+}
 
-console.log("35 ->", ["track1", "track2", "track1"].reduce(countTrack, 0));
+const countTracke1s = function () {
+  const data = ["track1", "track2", "track1"];
+  return data.reduce(countTrack1, 0);
+}
 
-console.log("51 ->", ["grapes", "banana", "apple", "banana"].reduce(countBanana, 0));
+const countBananas = function () {
+  const data = ["grapes", "banana", "apple", "banana"];
+  return data.reduce(countBanana, 0);
+}
 
-console.log("58 ->", [["red", "blue",], ["blue", "yellow"], ["red", "red"]].flat().reduce(countRed, 0));
+const countReds = function () {
+  const data = [["red", "blue",], ["blue", "yellow"], ["red", "red"]];
+  return data.flat().reduce(countRed, 0);
+}
+
+const main = function() {
+  console.log("1 => ", countBlues());
+  console.log("10 => ", countDunes());
+  console.log("15 => ", countDeers());
+  console.log("24 => ", countChocolates());
+  console.log("35 => ", countTracke1s());
+  console.log("51 => ", countBananas());
+  console.log("58 => ", countReds());
+}
+
+main();
