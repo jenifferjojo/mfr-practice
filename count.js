@@ -6,28 +6,32 @@ const countDune = function (count, book) {
   return book === "Dune" ? count + 1 : count;
 };
 
-const countDeer = function (count, book) {
-  return book === "deer" ? count + 1 : count;
+const countDeer = function (count, animal) {
+  return animal === "deer" ? count + 1 : count;
 };
 
-const countChocolate = function (count, book) {
-  return book === "chocolate" ? count + 1 : count;
+const countChocolate = function (count, flavor) {
+  return flavor === "chocolate" ? count + 1 : count;
 };
 
-const countTrack1 = function (count, book) {
-  return book === "track1" ? count + 1 : count;
+const countTrack1 = function (count, track) {
+  return track === "track1" ? count + 1 : count;
 };
 
-const countBanana = function (count, book) {
-  return book === "banana" ? count + 1 : count;
+const countBanana = function (count, fruit) {
+  return fruit === "banana" ? count + 1 : count;
 };
 
-const countRed = function (count, book) {
-  return book === "red" ? count + 1 : count;
+const countRed = function (count, color) {
+  return color === "red" ? count + 1 : count;
 };
 
-const countPhonetic = function (count, book) {
-  return book === "sa" ? count + 1 : count;
+const countPhonetic = function (count, sound) {
+  return sound === "sa" ? count + 1 : count;
+};
+
+const countRainMention = function (count, entry) {
+  return entry.includes("rain") ? count + 1 : count;
 };
 
 const countBlues = function () {
@@ -70,6 +74,11 @@ const countPhonetics = function () {
   return data.flatMap(x => x).reduce(countPhonetic, 0);
 }
 
+const countRainMentions = function () {
+  const data = [["sunny", "rain",], ["cloudy", "rain"], ["sunny", "cloudy"]];
+  return data.reduce(countRainMention, 0);
+}
+
 const main = function() {
   console.log("1 => ", countBlues());
   console.log("10 => ", countDunes());
@@ -78,6 +87,7 @@ const main = function() {
   console.log("35 => ", countTracke1s());
   console.log("51 => ", countBananas());
   console.log("76 => ", countPhonetics());
+  console.log("82 => ", countRainMentions());
 }
 
 main();
